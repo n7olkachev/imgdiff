@@ -45,3 +45,8 @@ Options:
   --fail-on-layout       Do not compare images and produce output if images layout is different. [default: false]
   --help, -h             display this help and exit
 ```
+
+## Download
+
+You can find pre-built binaries [here](https://github.com/n7olkachev/imgdiff/releases/tag/v1.0.0).
+imgdiff is written in Go, so there shouldn't be any troubles to compile it for the most of popular platforms.
