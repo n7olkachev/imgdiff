@@ -14,6 +14,8 @@ It can do everything [odiff](https://github.com/dmtrKovalenko/odiff) can. Faster
 
 ## Benchmarks
 
+I've tested it on Linux, Intel(R) Core(TM) i7-4700HQ CPU @ 2.40GHz, 8 cores.
+
 [Cypress image](https://github.com/dmtrKovalenko/odiff/blob/main/images/www.cypress.io.png) 3446 x 10728
 
 | Command                                                        |      Mean [s] | Min [s] | Max [s] | Relative |
