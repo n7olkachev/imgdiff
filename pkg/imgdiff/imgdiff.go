@@ -3,7 +3,7 @@ package imgdiff
 import (
 	"image"
 	"image/color"
-	"imgdiff/pkg/yiq"
+	"github.com/n7olkachev/imgdiff/pkg/yiq"
 	"runtime"
 	"sync"
 	"sync/atomic"

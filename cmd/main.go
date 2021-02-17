@@ -7,7 +7,7 @@ import (
 	_ "image/jpeg"
 	"image/png"
 	_ "image/png"
-	"imgdiff/pkg/imgdiff"
+	"github.com/n7olkachev/imgdiff/pkg/imgdiff"
 	"log"
 	"os"
 	"sync"

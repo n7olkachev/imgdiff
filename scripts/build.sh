@@ -2,7 +2,7 @@
 
 package_name=imgdiff
 
-platforms=("windows/amd64" "windows/386" "linux/386" "linux/amd64" "darwin/amd64")
+platforms=("windows/amd64" "windows/386" "linux/386" "linux/amd64" "darwin/amd64" "darwin/386")
 
 for platform in "${platforms[@]}"
 do
