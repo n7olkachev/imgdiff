@@ -3,10 +3,11 @@ package imgdiff
 import (
 	"image"
 	"image/color"
-	"github.com/n7olkachev/imgdiff/pkg/yiq"
 	"runtime"
 	"sync"
 	"sync/atomic"
+
+	"github.com/n7olkachev/imgdiff/pkg/yiq"
 )
 
 // Options struct.

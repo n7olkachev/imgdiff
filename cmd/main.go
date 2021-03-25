@@ -7,10 +7,11 @@ import (
 	_ "image/jpeg"
 	"image/png"
 	_ "image/png"
-	"github.com/n7olkachev/imgdiff/pkg/imgdiff"
 	"log"
 	"os"
 	"sync"
+
+	"github.com/n7olkachev/imgdiff/pkg/imgdiff"
 
 	"github.com/alexflint/go-arg"
 	. "github.com/logrusorgru/aurora"
@@ -87,16 +88,18 @@ func main() {
 	}
 
 	f, _ := os.Create(args.Output)
-	defer f.Close()
 
 	writer := bufio.NewWriter(f)
-	defer writer.Flush()
 
 	enc.Encode(writer, result.Image)
 
 	fmt.Println(Red("Failure!").Bold(), "Images are different.")
 
 	fmt.Printf("Different pixels: %d\n", Red(result.DiffPixelsCount).Bold())
+
+	writer.Flush()
+
+	f.Close()
 
 	os.Exit(1)
 }
